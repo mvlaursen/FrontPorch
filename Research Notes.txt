@@ -22,6 +22,8 @@ Q. Do you need a Google account to have a Google calendar shared with you?
 
 It seems that you do have a Google Calendar account to see shared calendars. You can use any email address to make the Google Calendar account; it doesn't have to be a Gmail account.
 
+Note that I am not talking about Google public calendars here. I am assuming that parents would want to share their calendars privately.
+
 Q. Can a kid have a Google account?
 
 Q. What mobile APIs and web APIs does Google Calendar have?
