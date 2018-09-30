@@ -24,3 +24,6 @@ Q. How does Apple family sharing work, as far as calendars and accounts?
 
 SERVER FRAMEWORK / LANGUAGE
 
+NATE'S IDEAS
+
+* If kids are playing a game like basketball, can keep track of scores so that the app can produce rankings. With the rankings you could get rankings for different bonuses / rewards. Can use this gamification to encourage kids to do more activities IRL ("in real life").
