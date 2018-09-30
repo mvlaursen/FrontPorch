@@ -1,0 +1,26 @@
+PLUSES AND MINUSES OF DEVELOPING FRONTPORCH
+
++ There aren't any successful apps of this type already.
+- There's a lot to get to MVP.
+- It's hard to explain the concept and to demo it.
+
+MVP
+
+* Sign up / sign in with parent involvement/approval.
+* Regular parental reports via email.
+* Detect if reports are bouncing, or parent is not looking at them, and suspend account?
+* Kids can send simple invitations.
+* Architected so calendar sharing can be integrated.
+
+CALENDARING
+
+For the best experience, kids should be able to see calendars shared by their parents, and possibly each other's calendars. The most popular calendaring system is probably Google Calendar. I might want to support Apple's family sharing, too.
+
+I might architect the system so that the mobile apps don't interact with those calendaring systems directly. Instead, the shared calendars would be processed on the server side and the mobile app would get the shared calendar data from the server, perhaps as JSON or in iCalendar format.
+
+Q. Do you need a Google account to have a Google calendar shared with you?
+Q. Can a kid have a Google account?
+Q. How does Apple family sharing work, as far as calendars and accounts?
+
+SERVER FRAMEWORK / LANGUAGE
+
