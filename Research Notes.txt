@@ -26,6 +26,8 @@ Note that I am not talking about Google public calendars here. I am assuming tha
 
 Q. Can a kid have a Google account?
 
+Kids under 13 can only have a Google account that is created and managed with Family Link. Family Link seems to be more developed than when I started using it for Nate's Android phone. It looks like it can be used on iPhone, Chromebooks, and to some extent on web browsers.
+
 Q. What mobile APIs and web APIs does Google Calendar have?
 
 Q. How does Apple family sharing work, as far as calendars and accounts?
