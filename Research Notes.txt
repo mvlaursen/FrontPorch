@@ -19,6 +19,9 @@ For the best experience, kids should be able to see calendars shared by their pa
 I might architect the system so that the mobile apps don't interact with those calendaring systems directly. Instead, the shared calendars would be processed on the server side and the mobile app would get the shared calendar data from the server, perhaps as JSON or in iCalendar format.
 
 Q. Do you need a Google account to have a Google calendar shared with you?
+
+It seems that you do have a Google Calendar account to see shared calendars. You can use any email address to make the Google Calendar account; it doesn't have to be a Gmail account.
+
 Q. Can a kid have a Google account?
 Q. How does Apple family sharing work, as far as calendars and accounts?
 
