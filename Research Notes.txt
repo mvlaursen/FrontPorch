@@ -40,7 +40,13 @@ There is a Family calendar that is shared in iCloud Family Sharing.
 
 It looks like the only iCloud calendaring API that may be available for servers to use is CalDAV. It looks like EventKit can be used on iOS. Doesn't look like there is any API for Android.
 
-SERVER FRAMEWORK / LANGUAGE
+SERVER FRAMEWORK / LANGUAGE FOR REST API
+
+If I want to go with the most popular framework, Express.js would be the best choice.
+
+If I want to go with a framework that is not quite as popular, but still popular, and doesn't use JavaScript: Python with Flask or Django.
+
+If I want to be avant-garde, Swift server side with Kitura.
 
 NATE'S IDEAS
 
