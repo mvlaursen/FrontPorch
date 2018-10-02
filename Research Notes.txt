@@ -38,7 +38,7 @@ Kids under 13 can have an Apple ID under iCloud Family Sharing.
 
 There is a Family calendar that is shared in iCloud Family Sharing.
 
-It looks like the only iCloud calendaring API that may be available for servers to use is CalDAV. It looks like EventKit can be used on iOS.
+It looks like the only iCloud calendaring API that may be available for servers to use is CalDAV. It looks like EventKit can be used on iOS. Doesn't look like there is any API for Android.
 
 SERVER FRAMEWORK / LANGUAGE
 
