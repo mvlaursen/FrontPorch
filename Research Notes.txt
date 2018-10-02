@@ -30,6 +30,8 @@ Kids under 13 can only have a Google account that is created and managed with Fa
 
 Q. What mobile APIs and web APIs does Google Calendar have?
 
+It looksl like they don't distinguish between mobile or server clients. They have a REST API, plus Java, JavaScript, .NET, Objective-C, PHP, and Python wrapper libraries. They are developing Dart, Go, Node.js, and Ruby libraries.
+
 Q. How does Apple family sharing work, as far as calendars and accounts?
 
 SERVER FRAMEWORK / LANGUAGE
