@@ -9,7 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
+@property (weak, nonatomic) IBOutlet UITextView *healthCheckLog;
 @end
 
 @implementation ViewController
@@ -19,5 +19,10 @@
     // Do any additional setup after loading the view, typically from a nib.
 }
 
+- (IBAction)doHealthCheck:(UIButton *)sender {
+    NSString *text = [_healthCheckLog text];
+    text = [text stringByAppendingString:@"\nTesting..."];
+    [_healthCheckLog setText:text];
+}
 
 @end
