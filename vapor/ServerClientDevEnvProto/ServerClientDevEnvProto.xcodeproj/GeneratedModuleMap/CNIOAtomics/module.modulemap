@@ -1,0 +1,4 @@
+module CNIOAtomics {
+    umbrella "/Users/mlaursen/Documents/FrontPorch/vapor/ServerClientDevEnvProto/.build/checkouts/swift-nio.git-2382449625588220716/Sources/CNIOAtomics/include"
+    export *
+}

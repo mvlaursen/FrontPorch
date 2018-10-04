@@ -1,0 +1,4 @@
+module CNIOSHA1 {
+    umbrella "/Users/mlaursen/Documents/FrontPorch/vapor/ServerClientDevEnvProto/.build/checkouts/swift-nio.git-2382449625588220716/Sources/CNIOSHA1/include"
+    export *
+}
