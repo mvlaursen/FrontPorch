@@ -20,9 +20,19 @@
 }
 
 - (IBAction)doHealthCheck:(UIButton *)sender {
-    NSString *text = [_healthCheckLog text];
-    text = [text stringByAppendingString:@"\nTesting..."];
-    [_healthCheckLog setText:text];
+    NSURL *url = [NSURL URLWithString:@"http://localhost:8080/health"];
+    NSURLSessionDataTask *task = [NSURLSession.sharedSession dataTaskWithURL:url completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
+        NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *) response;
+        long statusCode = [httpResponse statusCode];
+        NSString *logLine = [NSString stringWithFormat:@"\nStatus code: %ld", statusCode];
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSString *text = [self->_healthCheckLog text];
+            text = [text stringByAppendingString:logLine];
+            [self->_healthCheckLog setText:text];
+        });
+    }];
+    [task resume];
 }
 
 @end
