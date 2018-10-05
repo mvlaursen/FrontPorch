@@ -19,11 +19,21 @@ class ViewController: UIViewController {
     @IBAction func doHealthCheck(_ sender: UIButton) {
         let url = URL(string: "http://localhost:8080")
         let dataTask = URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            let httpResponse = response as! HTTPURLResponse
-            let statusCode = httpResponse.statusCode
-            let logLine = String(format: "Status code: %ld\n", statusCode)
+            var logLine: String?
+            
+            if error == nil {
+                let httpResponse = response as! HTTPURLResponse
+                let statusCode = httpResponse.statusCode
+                logLine = String(format: "Status code: %ld\n", statusCode)
+            } else {
+                logLine = String(format: "Error: %@\n", error?.localizedDescription ?? "No error description.")
+            }
+            
             DispatchQueue.main.async {
-                self.healthCheckLog.text.append(logLine)
+                assert(logLine != nil)
+                if logLine != nil {
+                    self.healthCheckLog.text.append(logLine!)
+                }
             }
         }
         dataTask.resume()
