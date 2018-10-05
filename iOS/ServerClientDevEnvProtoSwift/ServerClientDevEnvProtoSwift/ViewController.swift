@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController {        
+    @IBOutlet weak var healthCheckLog: UITextView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-
+    @IBAction func doHealthCheck(_ sender: UIButton) {
+        healthCheckLog.text = "Hello, world!"
+    }
 }
 
