@@ -17,23 +17,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Health Check (Swift Version)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7m-id-ycq">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Health Check (Swift Version)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7m-id-ycq">
                                 <rect key="frame" x="16" y="20" width="343" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sgc-VJ-kIJ">
-                                <rect key="frame" x="16" y="49" width="343" height="560"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sgc-VJ-kIJ">
+                                <rect key="frame" x="16" y="49" width="343" height="548"/>
                                 <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
                             </textView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD9-Hs-lE6">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UD9-Hs-lE6">
                                 <rect key="frame" x="16" y="617" width="343" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Do Health Check"/>
                                 <connections>
                                     <action selector="doHealthCheck:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Lm-PY-1HA"/>
@@ -41,6 +38,18 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="sgc-VJ-kIJ" firstAttribute="top" secondItem="Y7m-id-ycq" secondAttribute="bottom" constant="8" symbolic="YES" id="3az-Vn-qVD"/>
+                            <constraint firstItem="UD9-Hs-lE6" firstAttribute="top" secondItem="sgc-VJ-kIJ" secondAttribute="bottom" constant="20" id="CO9-V9-Ayk"/>
+                            <constraint firstItem="Y7m-id-ycq" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="GAV-Ps-dsw"/>
+                            <constraint firstItem="Y7m-id-ycq" firstAttribute="trailing" secondItem="sgc-VJ-kIJ" secondAttribute="trailing" id="NMf-kn-wQx"/>
+                            <constraint firstAttribute="bottom" secondItem="UD9-Hs-lE6" secondAttribute="bottom" constant="20" symbolic="YES" id="PQz-jh-pJo"/>
+                            <constraint firstItem="sgc-VJ-kIJ" firstAttribute="trailing" secondItem="UD9-Hs-lE6" secondAttribute="trailing" id="eth-CQ-NJ2"/>
+                            <constraint firstItem="Y7m-id-ycq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="hOt-Lg-F0Z"/>
+                            <constraint firstItem="Y7m-id-ycq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kUE-Tq-a8S"/>
+                            <constraint firstItem="Y7m-id-ycq" firstAttribute="leading" secondItem="sgc-VJ-kIJ" secondAttribute="leading" id="v5z-pl-1hz"/>
+                            <constraint firstItem="sgc-VJ-kIJ" firstAttribute="leading" secondItem="UD9-Hs-lE6" secondAttribute="leading" id="zdD-2P-QMc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
