@@ -17,14 +17,14 @@ class ViewController: UIViewController {
     }
 
     @IBAction func doHealthCheck(_ sender: UIButton) {
-        let url = URL(string: "http://localhost:8080")
+        let url = URL(string: "http://localhost:8080/health")
         let dataTask = URLSession.shared.dataTask(with: url!) { (data, response, error) in
             var logLine: String?
             
             if error == nil {
                 let httpResponse = response as! HTTPURLResponse
                 let statusCode = httpResponse.statusCode
-                logLine = String(format: "Status code: %ld\n", statusCode)
+                logLine = String(format: "Status Code: %ld %@\n", statusCode, HTTPURLResponse.localizedString(forStatusCode: statusCode))
             } else {
                 logLine = String(format: "Error: %@\n", error?.localizedDescription ?? "No error description.")
             }
